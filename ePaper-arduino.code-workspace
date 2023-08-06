@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "esp32-sensors",
+			"path": "../esp32-sensors/esp32-sensors"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.x": "cpp"
+		}
+	}
+}
