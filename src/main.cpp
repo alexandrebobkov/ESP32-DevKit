@@ -1,9 +1,9 @@
 /*
-  Written for board Espressive ESP32-WROOM-32
+  Written for ESP32 development board Espressive ESP32-WROOM-32
     
-  ePaper embeded system program written in style adopted for learning.
+  MQTT embeded system program written in a style adopted for learning.
   Adopted & written by: Alexander Bobkov
-  July 28, 2023
+  August 6, 2023
 */
 
 // IoT ID
