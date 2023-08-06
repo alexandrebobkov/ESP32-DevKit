@@ -1,10 +1,10 @@
-# ePaper-arduino
+# ESP32 - MQTT (Mosquito)
 
-ESP32 Espressif board
+ESP32 Development board
 
-### Network Building Blocks
+Development framework: C++, Arduino, PlatformIO
 
 Node-RED
 
-Mosquitto
+Mosquito
 
