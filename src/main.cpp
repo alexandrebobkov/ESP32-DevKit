@@ -3,7 +3,7 @@
     
   MQTT embeded system program written in a style adopted for learning.
   Adopted & written by: Alexander Bobkov
-  August 6, 2023
+  August 7, 2023
 */
 
 // IoT ID
