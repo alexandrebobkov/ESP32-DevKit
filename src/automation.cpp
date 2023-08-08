@@ -1,4 +1,4 @@
-#include "Automation.h"
+#include "automation.h"
 
 Automation::Automation() {
 
