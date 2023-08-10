@@ -3,9 +3,6 @@
 #include <WiFi.h>
 
 
-
-
-
 // Define tasks.
 TaskHandle_t Task0, TaskLed;     // Dummy built-in LED blink cycle
 TaskHandle_t TaskWiFi;  // Task maintaining wireless connection

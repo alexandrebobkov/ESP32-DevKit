@@ -6,19 +6,6 @@
   August 7, 2023
 */
 
-// IoT ID
-#define IoT_ID    node1
-// Uncomment modules as required
-//#define RTC
-//#define MICRO_SD
-#define BMP280      // Adafruit BMP280; temp & pressure
-//#define BME280    // Generic BME280; temp, pressure & humidity
-//#define AWSIoT
-
-#define MQTT_SSL
-//#define HOTSPOT
-//#define MQTT
-
 #include "automation-0.h"
 #include "mqtt.h"
 #include "secrets.h"

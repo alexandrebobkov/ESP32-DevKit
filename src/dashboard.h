@@ -14,8 +14,6 @@
 #include <SPI.h>
 #include <SD.h>
 
-
-
 class Dashboard {
     private:
         static const uint16_t input_buffer_pixels = 800; // may affect performance
