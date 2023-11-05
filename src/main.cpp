@@ -4,6 +4,8 @@
   MQTT embeded system program written in a style adopted for learning.
   Adopted & written by: Alexander Bobkov
   August 7, 2023
+  Controls relay 1 & 2 and Fan PWM via MQTT
+  
 */
 
 // IoT ID
