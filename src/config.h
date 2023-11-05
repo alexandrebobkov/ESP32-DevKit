@@ -1,5 +1,45 @@
 //#include "secrets.h"
 
+// Uncomment modules as required
+//#define RTC
+//#define MICRO_SD
+#define BMP280      // Adafruit BMP280; temp & pressure
+//#define BME280    // Generic BME280; temp, pressure & humidity
+//#define AWSIoT
+
+#define MQTT_SSL
+//#define HOTSPOT
+//#define MQTT
+
+
+/*
+#########################################################################
+
+                                MQTT
+
+#########################################################################
+*/
+// MQTT Default Channels
+#define MQTT_IOT_CHANNEL_TEMPERATURE        "esp32/sensors/temperature"
+#define MQTT_IOT_CHANNEL_PRESSURE           "esp32/sensors/pressure"
+#define MQTT_IOT_CHANNEL_HUMIDITY           "esp32/sensors/humidity"
+// MQTT Channel specific for each node
+// [NODE]/sensors/sensor
+// IoT ID
+#define IoT_ID                          "node1"
+#define MQTT_NODE_TEMPERATURE           "/sensors/temperature"
+#define MQTT_NODE_PRESSURE              "/sensors/pressure"
+#define MQTT_NODE_HUMIDITY              "/sensors/humidity"
+#define MQTT_NODE_PULSE                 "/pulse"
+#define MQTT_NODE_SWITCH_1              "/sw1"
+#define MQTT_NODE_SWITCH_2              "/sw2"
+#define MQTT_NODE_OUTPUT_PWM_1          "/pwm1"
+// Standardize switches channels
+#define MQTT_IOT_CHANNEL_OUTPUT_PULSE       "node1/output/pulse"
+#define MQTT_IOT_CHANNEL_OUTPUT_SWITCH_1    "node1/output/sw1"
+#define MQTT_IOT_CHANNEL_OUTPUT_SWITCH_2    "node1/sw2"
+#define MQTT_IOT_CHANNEL_OUTPUT_PWM_1       "node1/pwm1"
+
 // Uncomment corresponding board
 #define devkit_30pin_001
 //#define devkit_36pin_001
@@ -42,7 +82,7 @@ D13           28    =>  Assigned to read RPM
 #define DAC_CH1   25  // GPIO 25
 #define DAC_CH2   26  // GPIO 26
 #define FAN_RPM   13  // GPIO 13
-uint8_t pins[] = {2,4,5,12,13,14,15,18,19,21,22,23,25,26,27,32,33}; // 20 GPIO pins
+//uint8_t pins[] = {2,4,5,12,13,14,15,18,19,21,22,23,25,26,27,32,33}; // 20 GPIO pins
 #endif
 
 /*
@@ -80,7 +120,7 @@ D13           32
 #ifdef devkit_36pin_001
 #define PING_PIN 33           // D33 pin # of audio ping
 #define LED_PIN   2            // pin # of LED controlled by light sensor
-uint8_t pins[] = {};
+//uint8_t pins[] = {};
 #endif
 /*
 ##############################################

@@ -1,4 +1,5 @@
 #include "mqtt.h"
+#include "config.h"
 //#include "automation-0.h"
 
 void Mosquitto::mosquitoCallBack (char* topic, byte* message, unsigned int length) {
